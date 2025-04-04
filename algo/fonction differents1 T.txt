@@ -1,0 +1,31 @@
+fonction differents1(T, n):
+    si n == 0:
+        retourner 0
+
+    compteur <- 0  # Compteur pour les éléments différents
+
+    pour i de 0 à n - 1:
+        estUnique <- vrai  # On suppose que T[i] est unique
+        pour j de 0 à i - 1:
+            si T[i] == T[j]:
+                estUnique <- faux
+                break
+        si estUnique:
+            compteur <- compteur + 1
+
+    retourner compteur
+
+fonction differents2(T, n):
+    si n == 0:
+        retourner 0
+
+    triRapide(T, n)  # Complexité O(n log n)
+
+    compteur <- 1  # Compte le premier élément comme différent
+
+    pour i de 1 à n - 1:
+        si T[i] != T[i - 1]:
+            compteur <- compteur + 1
+
+    retourner compteur
+

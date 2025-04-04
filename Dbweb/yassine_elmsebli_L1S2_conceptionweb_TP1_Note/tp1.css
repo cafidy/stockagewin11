@@ -1,0 +1,38 @@
+header, footer {
+    padding: 10px;
+    color: darkblue;
+}
+
+body {
+    font-family: Arial,sans-serif;
+    font-size: 0.9em;
+}
+
+main {
+    flex: 1;
+    overflow: hidden;
+    padding: 20px;
+}
+
+nav {
+    width: 22.5%;
+    height: 100vh;
+    float: rih;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+article{
+    padding: 10px;
+}
+h4{
+    text-decoration: underline;
+}
+.box:hover{
+    border-color: blueviolet;
+}
+.box{
+    border-top-color: black;
+    border-left-color: darkgrey;
+    border-right-color: darkgrey;
+    border-bottom-color: darkgrey
+}

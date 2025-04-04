@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Positionnement corrigé des div</title>
+  <style>
+    /* Réinitialisation des marges et paddings pour tous les éléments */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style général du body */
+    body {
+      background-color: #eee;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Styles généraux pour chaque div */
+    div {
+      position: absolute;         /* Permet un positionnement via top/left */
+      border: 1px dashed black;   /* Bordure en pointillés */
+      text-align: center;         /* Centre le texte horizontalement */
+      padding: 10px;              /* Espace interne de 10px */
+      color: black;               /* Couleur du texte */
+    }
+
+    /* Premier div : on le place devant grâce à un z-index élevé */
+    #div1 {
+      top: 20px;                 
+      left: 20px;
+      width: 80px;
+      height: 80px;
+      background-color: red;
+      z-index: 3;  /* Valeur élevée pour être affiché devant les autres */
+    }
+
+    /* Deuxième div : on le place derrière grâce à un z-index bas */
+    #div2 {
+      top: 40px;
+      left: 10px;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      z-index: 1;  /* Valeur basse pour qu'il se trouve en dessous */
+    }
+
+    /* Troisième div : positionné entre le premier et le deuxième */
+    #div3 {
+      top: 100px;
+      left: 120px;
+      width: 200px;
+      height: 150px;
+      background-color: blue;
+      z-index: 2;  /* Valeur intermédiaire pour être au-dessus de #div2 mais en dessous de #div1 */
+    }
+  </style>
+</head>
+<body>
+  <div id="div1">Texte du premier div <img src="papillon2.gif" alt="pp^p" style="position: absolute; top :10px ;left:1px;"></div>
+  <div id="div2">Texte du deuxième div</div>
+  <div id="div3">Et un troisième div !<img src="papillon.gif" alt="pp" style="size: inherit; position:absolute; left:80px ; top: 50px;"></div>
+</body>
+</html>

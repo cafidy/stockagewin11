@@ -1,0 +1,59 @@
+body {
+    font-family: Arial,sans-serif;
+    font-size: 0.9em;
+}
+
+header, footer {
+    padding: 10px;
+    color: darkblue;
+    background-color: green;
+}
+
+
+section {
+    margin: 5px;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+main {
+    flex: 1;
+    overflow: hidden;
+    padding: 20px;
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+nav {
+    width: 22.5%;
+    float: left;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center; 
+    display: inline-block;
+    background-color: lightblue;
+    color: blue;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover, a:active {
+    background-color: #FF5533;
+}
